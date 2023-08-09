@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* Colores Primarios */
+    /* Color Principal */
+    --very-dark-blue: hsl(233, 47%, 7%);
+    /* card background */
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    /* accent */
+    --soft-violet: hsl(277, 64%, 61%);
+
+    /* Colores Neutrales */
+    /* main heading, stats */
+    --white: hsl(0, 0%, 100%);
+    --Main-Paragraph-slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Stats-Headings-slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+
+    --layer: rgba(110, 30, 160, 0.7);
+}
+
+/* Generales */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: var(--very-dark-blue);
+}
+
+/* --------------  Inicia main -------------- */
+main {
+    height: 782px;
+    width: 328px;
+    background-color: var(--dark-desaturated-blue);
+    margin: 88px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* --------------  Inicia section 1 -------------- */
+
+.image {
+    background-image: url(images/image-header-mobile.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 240px;
+}
+
+.layer {
+    background-color: var(--layer);
+    height: 100%;
+    width: 100%;
+}
+
+/* --------------  Termina section 1 -------------- */
+
+/* --------------  Inicia section 2 -------------- */
+
+.section2 {
+    padding: 40px 33px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 1.8em;
+    font-family: 'Inter', sans-serif;
+    height: 115px;
+}
+
+span {
+    color: var(--soft-violet);
+}
+
+p {
+    color: var(--Main-Paragraph-slightly-transparent-white);
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    line-height: 25px;
+    height: 137px;
+}
+
+.stats {
+    color: var(--Stats-Headings-slightly-transparent-white);
+    line-height: 25px;
+}
+
+.amount {
+    font-weight: 700;
+    font-size: 1.45em;
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+}
+
+.last {
+    text-transform: uppercase;
+}
+
+.concept {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-bottom: 33px;
+    letter-spacing: 1px;
+}
+/* --------------  Termina section 2 -------------- */
+
+/* --------------  Termina main -------------- */
+
+/* --------------  Inicia footer -------------- */
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    margin-bottom: 80px;
+}
+.attribution a { 
+    color: white 
+}
+/* --------------  Termina footer -------------- */
+
+/* --------------  Inicia Media Queries -------------- */
+
+@media only screen and (min-width: 1200px) {
+
+    main {
+        width: 1110px;
+        height: 448px;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 178px auto;
+    }
+
+    .image {
+        width: 540px;
+        height: 100%;
+        background-image: url(images/image-header-desktop.jpg);
+    }
+
+    .section2 {
+        padding: 75px 70px;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        margin-right: 70px;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 70px;
+    }
+
+}
+
+/* --------------  Termina Media Queries -------------- */
